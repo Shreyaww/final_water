@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Css.css">
+    <link rel="stylesheet" media="screen and (max-width: 870px)" href="phone.css">
+
+    <title>Detect The Quality Of Water Coming at Your Home | WaterQualityDetection</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="img/logo.png" alt="WaterQualityDetection">
+        </div>
+
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Scope</a></li>
+            <li class="item"><a href="#client-section">Quality Detector</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">
+            Water Quality Prediction
+        </h1>
+        <p>The project aims to prepare a Model to predict the quality of water using factors like hardness, pH value,
+            dissolved solids, chloramines, sulfate, carbon, etc and tell us whether the water is safe to drink or not.
+        </p>
+        <p>Lorem i6psum dolor sit amet consectetur adipisicing elit.</p>
+
+        <button class="btn" id="btn_predict">Predict Water Quality Now</button>
+
+        <form onsubmit="return validate()" action="predict.html" method="POST" class="popup">
+            <div class="popup-content">
+                <img src="img/close.png" alt="closeBtn" class="close" id="close_btn">
+                <img src="img/user.png" alt="User">
+
+                <input type="number" placeholder="Field1" min="1" max=100 id="f1">
+                <input type="number" placeholder="Field2" id="f2">
+                <input type="number" placeholder="Field3" id="f3">
+                <input type="number" placeholder="Field4" id="f4">
+                <input type="number" placeholder="Field5" id="f5">
+                <input type="number" placeholder="Field6" id="f6">
+                <input type="number" placeholder="Field7" id="f7">
+                <input type="number" placeholder="Field8" id="f8">
+                <input type="number" placeholder="Field9" id="f9">
+                <input type="number" placeholder="Field10" id="f10">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- <hr> -->
+    <section id="services-container">
+        <h1 class="h-primary center">
+            Scope
+        </h1>
+        <div id="services">
+            <div class="box">
+                <img src="img/farmers-4897451_640.jpg" alt="">
+
+                <div class="contact-btn">
+                    <button class="btn">For The Citizens</button>
+                </div>
+
+                <p class="text center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, porro minus, quam
+                    cum magnam ut quidem beatae autem amet eius natus dolorum</p>
+            </div>
+
+            <div class="box">
+                <img src="img/committee-room-1022791_640.jpg" alt="">
+                <div class="contact-btn">
+                    <button class="btn">Government Officials</button>
+                </div>
+                <p class="text center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, porro minus, quam
+                    cum magnam ut quidem beatae autem amet eius natus</p>
+            </div>
+
+            <div class="box">
+                <img src="img/chemist-2815640_640.jpg" alt="">
+                <div class="contact-btn">
+                    <button class="btn">Researchers</button>
+                </div>
+                <p class="text center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, porro minus, quam
+                    cum magnam ut quidem beatae autem amet eius natus</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- <hr> -->
+    <section id="client-section">
+        <h1 class="h-primary center">
+            Our Clients
+        </h1>
+
+        <div id="clients">
+            <div class="client-item">
+                <img src="img/Minimalistic Blue Watercolor Logo.png" alt="Our Clients">
+            </div>
+
+            <div class="client-item">
+                <img src="img/Tata_Institute_of_Fundamental_Research_logo.png" alt="Our Clients">
+            </div>
+
+            <div class="client-item">
+                <img src="img/Blue Modern Water fresh Mineral Water Logo.png" alt="Our Clients">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">
+            Contact Us
+        </h1>
+        <div id="contact-box">
+            <form action="save.php" method="post">
+                <div class="form-group">
+                    <label for="name">Enter Your Name : </label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                </div>
+                <!-- for and id must be same -->
+                <div class="form-group">
+                    <label for="email">Enter Your Email : </label>
+                    <input type="email" name="mail" id="email" placeholder="Enter Your Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Enter Your Phone : </label>
+                    <input type="phone" name="phone" id="phone" placeholder="Enter Your Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Enter Your Message : </label>
+                    <textarea name="message" id="Message" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="contact-btn">
+                    <button class="btn">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.WaterQualityDetection.com. All Rights Reserved!
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
